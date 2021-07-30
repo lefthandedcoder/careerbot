@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>Oops... I don't know what that means. To start over, just say 'hi.'</template>
+  </category>
+  
+  <category>
+    <pattern>BYE</pattern>
+    <template>It's been real, <get name = "username"></get>! To start over, just say 'hi' or tell me your name (My name is... )</template>
+  </category>
+  
+  <category>
+    <pattern>HI</pattern>
+    <template>Greetings! 👋 I am CareerBot! 🤖 What's your name? (My name is... )</template>
+  </category>
+  
+  <category>
+    <pattern>HELLO</pattern>
+        <template><srai>HI</srai></template>
+  </category>
+  
+  <category>
+    <pattern>HI THERE</pattern>
+        <template><srai>HI</srai></template>
+  </category>
+  
+  <category>
+    <pattern>HEY</pattern>
+        <template><srai>HI</srai></template>
+  </category>
+  
+  <category>
+    <pattern>MY NAME IS *</pattern>
+    <template>Nice to meet you, <set name = "username"><star/></set>! 🤝 I'm going to ask you a few questions 📝 to find a career that is right for you. Are you ready to get started?</template>
+  </category>
+  
+  <category>
+    <pattern>NO</pattern>
+    <template>No worries! I'll be here whenever you're ready! Just say 'hi' to start over.</template>
+  </category>
+  
+    <category>
+    <pattern>YES</pattern>
+    <template>Excellent! Question 1: Which classes do you prefer?
+        <button>
+            <text>Theory 📚</text>
+            <postback>THEORY</postback>
+        </button><button>
+            <text>Programming 💻</text>
+            <postback>PROGRAMMING</postback>
+        </button>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>PROGRAMMING</pattern>
+    <template>Perfect! Question 2: Which do you prefer?
+        <button>
+            <text>Design 🎨</text>
+            <postback>DESIGN</postback>
+        </button><button>
+            <text>Coding 💻</text>
+            <postback>CODING</postback>
+        </button>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>THEORY</pattern>
+    <template>Fantastic! Question 2: Which of the following most interests you?
+        <button>
+            <text>Cybersecurity 🚨</text>
+            <postback>CYBER</postback>
+        </button>
+        <button>
+            <text>Management 📋</text>
+            <postback>MANAGEMENT</postback>
+        </button>
+    </template>
+  </category>
+  
+    <category>
+    <pattern>MANAGEMENT</pattern>
+    <template>Great! Question 3: Which of the following most interests you?
+        <button>
+            <text>Databases 🗄️</text>
+            <postback>DATABASE ADMIN</postback>
+        </button>
+        <button>
+            <text>Networks 🖧</text>
+            <postback>NETWORK ADMIN</postback>
+        </button>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>DESIGN</pattern>
+    <template>Fancy! You'd make a great front-end developer! Front-end web developers are responsible for creating stunning, effective websites and web applications. For more information, <link><text>click here</text><url>https://www.computerscience.org/careers/web-developer/</url></link></template>
+  </category>
+
+  <category>
+    <pattern>CODING</pattern>
+    <template>Word! You'd make a great software developer! Software developers design, build, test, and maintain programs that make our lives better! For more information, <link><text>click here</text><url>https://www.computerscience.org/careers/software-developer/</url></link></template>
+  </category>
+
+  <category>
+    <pattern>CYBER</pattern>
+    <template>Affirmative! You'd make a great security analyst! Security analysts protect systems from security threats. For more information, <link><text>click here</text><url>https://www.computerscience.org/careers/information-security-analyst/</url></link></template>
+  </category>
+
+  <category>
+    <pattern>DATABASE ADMIN</pattern>
+    <template>Right on! You'd make a great database administrator! Database administrators collect, organize, and analyze data and information for easier access and to mine for insights. For more information, <link><text>click here</text><url>https://www.computerscience.org/careers/database-administrator/</url></link></template>
+  </category>
+
+  <category>
+    <pattern>NETWORK ADMIN</pattern>
+    <template>The results are in! You'd make a great network administrator! Network administrators keep computer networks and systems running and design to make them run more efficiently. For more information, <link><text>click here</text><url>https://www.computerscience.org/careers/network-administrator/</url></link></template>
+  </category>
+
+</aiml>
